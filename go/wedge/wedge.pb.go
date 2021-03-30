@@ -49,6 +49,16 @@ const NumberMapping_on = slx.NumberMapping_on
 var NumberMapping_name = slx.NumberMapping_name
 var NumberMapping_value = slx.NumberMapping_value
 
+type Status = slx.Status
+
+const Status_Status_UNSET = slx.Status_Status_UNSET
+const Status_ok = slx.Status_ok
+const Status_update = slx.Status_update
+const Status_pending = slx.Status_pending
+
+var Status_name = slx.Status_name
+var Status_value = slx.Status_value
+
 type Meta = slx.Meta
 type State = slx.State
 type Number = slx.Number
