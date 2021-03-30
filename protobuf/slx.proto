@@ -54,6 +54,13 @@ message Info {
     bool enabled = 1;
 }
 
+enum Status {
+    Status_UNSET = 0;
+    ok = 1;
+    update = 2;
+    pending = 3;
+}
+
 message Value {
     string name = 1;
     string type = 2;
@@ -61,7 +68,7 @@ message Value {
     string delta = 4;
     string permission = 5;
     string description = 6;
-    string status = 7;
+    Status status = 7;
     Number number = 8;
     String string = 9;
     Blob blob = 10;
