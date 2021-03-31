@@ -13,3 +13,5 @@ pre-build:
 build:
 	protoc -I=../protobuf  --go_out=plugins=grpc,paths=source_relative:./slx slx.proto
 	protoc -I=../protobuf  --go_out=plugins=grpc,paths=source_relative:./wedge wedge.proto
+	go build -o ./example/nodeclient ./example/client.go 
+
